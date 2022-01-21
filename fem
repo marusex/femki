@@ -1,7 +1,7 @@
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-list = [] #в квадратные скобки помещается список слов через запятую, каждое слово выделено одиночными кавычками ('')
+list = []  # в квадратные скобки помещается список слов через запятую, каждое слово выделено одиночными кавычками ('')
 import pip
 pip.main(['install' , 'requests'])
 import time 
