@@ -8,8 +8,8 @@ import time
 for item in list:
     url = 'https://processing.ruscorpora.ru/search.xml?env=alpha&api=1.0&mycorp=&mysent=&mysize=&mysentsize=&dpp=&spp=&spd=&mydocsize=&mode=main&lang=ru&sort=i_grtagging&nodia=1&text=lexform&req=' + str(item)
     r = requests.get(url)
-    if r.status.code == 429:
-  	    time.sleep(3)
+    if r.status_code == 429:
+  	    time.sleep(10)
     a = r.text
     if 'По этому запросу ничего не найдено.' in a:
         continue
